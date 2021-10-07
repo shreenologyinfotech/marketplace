@@ -37,7 +37,7 @@ if($_SERVER['HTTP_HOST']=='localhost' || $_SERVER['HTTP_HOST']=='192.168.43.30' 
 }else{
 	$config['base_url'] = 'https://manishmedicare.in/marketplace/';
 }
-$config['base_url'] = 'http://www.jayshreeelectricals.com/marketplace/';
+$config['base_url'] = 'http://localhost/marketplaceonline/';
 
 $config['paypal_sandbox_url']				= "https://www.sandbox.paypal.com/cgi-bin/webscr";
 $config['paypal_live_url']					= "https://www.paypal.com/cgi-bin/webscr";

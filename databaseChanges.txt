@@ -1,0 +1,1 @@
+ALTER TABLE `tbl_order` ADD `shipping_charges` DOUBLE NULL DEFAULT '0' AFTER `cod_charges`;

@@ -1,0 +1,1563 @@
+@charset "utf-8";
+
+@media (min-width: 1200px) {
+.pagebuilder .be-pb-xl-200 {
+    padding-bottom: 200px !important;
+  }
+}
+
+
+/* BE Colors */
+
+:root {
+  --primary: #cf0a2c;
+  --link-color: #cf0a2c;
+  --link-hover: #e70b31;
+}
+
+.pagebuilder .be-bg-light {
+  background-color: #f2f2f2;
+}
+.pagebuilder .be-bg-accent {
+  background-color: var(--primary);
+}
+.pagebuilder .be-bg-white {
+  background-color: #ffffff;
+}
+.pagebuilder .be-text-accent {
+  color: #297fca;
+}
+.pagebuilder .be-text-light {
+  color: #e7e7e7;
+}
+.pagebuilder .be-text-white {
+  color: #ffffff;
+}
+
+.be-dark-grey{color:#2b2b2b!important}
+.be-red{color:#cf0a2c!important}
+.be-blue{color: #34495e!important}
+/* BE Backgroundcolors */
+.be-bg-red{color:#fff!important;background-color:#cf0a2c!important}
+.be-bg-dark-blue{color:#fff!important;background-color:#232a2f!important}
+.be-bg-blue{color:#fff!important;background-color:#203549!important}
+.be-bg-light-blue{color:#fff!important;background-color:#34495e!important}
+.be-bg-black{color:#ffffff!important;background-color:#000!important}
+.be-bg-dark-grey{background-color:#2b2b2b!important}
+.be-bg-grey{background-color:#ebebeb!important}
+.be-bg-light-grey{background-color:#f2f2f2!important}
+.be-bg-white{background-color:#ffffff!important}
+/* BE VerlÃ¤ufe */
+.be-gradient-black-darkblue {background-color: #000000; background: linear-gradient(to bottom, #232a2f 10%, black 100%)}
+.be-gradient-darkgrey-darker {background-color: #2b2b2b; background: linear-gradient(to bottom, rgba(43,43,43,1) 0%,rgba(20,20,20,1) 100%);}
+.be-gradient-darkblue-darker {background-color: #232a2f; background: linear-gradient(to bottom, rgba(35,42,47,1) 0%,rgba(20,20,20,1) 100%);}
+
+.pagebuilder .be-text-bgimg {
+    color: #ffffff;
+    opacity: 1;
+    text-shadow: 4px 4px 12px rgba(0,0,0,0.5);
+}
+
+
+/* css addons */
+
+.buttons-top {
+    position: fixed;
+    right: 10px;
+    top: 10px;
+    z-index: 49;
+}
+.buttons-top .btn {
+	background-color: #cf0a2c;
+	color: white !important;
+	padding: 0.6rem 1.2rem;
+	border-radius: 999rem;
+	font-size: 0.8rem;
+	font-weight: 600;
+	border: none;
+}
+
+.HeroSearch-inner h1 {
+margin-bottom: 14px;
+}
+
+/* HubSpot Forms */
+.hs-form {width:100%;}
+fieldset.form-columns-2, fieldset.form-columns-1 {
+max-width: 100%;
+}
+fieldset.form-columns-2 .input, fieldset.form-columns-1 .input {
+margin: 0 5px 5px 5px!important;
+}
+.hs-input {width: 100%!important; min-height:60px;}
+.hs-form textarea {width: 100%!important; min-height:160px; margin-top:20px;}
+.hs-button.primary {
+    font-family: inherit;
+    font-size: 16px;
+    line-height: 1.2;
+    padding: 18px 36px;
+    display: inline-block;
+    color: #fff;
+    border: none;
+    text-align: center;
+    border-radius: 40px;
+    font-weight: 600;
+    cursor: pointer;
+    background-color: #cf0a2c;
+margin-top:20px;
+}
+.hs-button.primary:hover {
+background-color: #e70b31;
+}
+
+
+
+.read-more-state {
+  display: none;
+}
+
+.read-more-target {
+  opacity: 0;
+  max-height: 0;
+  font-size: 0;
+  transition: .25s ease;
+}
+
+.read-more-state:checked ~ .read-more-wrap .read-more-target {
+  opacity: 1;
+  font-size: inherit;
+  max-height: 999em;
+}
+
+.read-more-state ~ .read-more-trigger:before {
+  content: 'Mehr lesen ';
+}
+
+.read-more-state:checked ~ .read-more-trigger:before {
+  content: '... weniger ';
+}
+
+.read-more-state ~ .read-more-trigger-bel:before {
+  content: 'Lees meer ';
+}
+
+.read-more-state:checked ~ .read-more-trigger-bel:before {
+  content: '... minder ';
+}
+
+.read-more-state ~ .read-more-trigger-en:before {
+  content: 'Read more ';
+}
+
+.read-more-state:checked ~ .read-more-trigger-en:before {
+  content: '... less ';
+}
+
+.read-more-trigger, .read-more-trigger-bel, .read-more-trigger-en {
+  cursor: pointer;
+  font-weight: normal;
+}
+.link-pfeil {
+font-weight: bold;
+}
+
+.read-more-trigger:after, .read-more-trigger-bel:after, .read-more-trigger-en:after, .link-pfeil:after {
+    font-family: 'icomoon';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: #cf0a2c;
+    font-size: 12px;
+    content: "\e602";
+    padding-left: 1px;
+}
+.pagebuilder a.read-more-trigger {
+	font-size: 14px;
+    color: #000;	
+}
+.haken {
+font-size: 28px;
+color: #90c926;
+font-weight: bolder;
+}
+.seotext p {
+font-size: 14px;
+line-height: 22px;
+letter-spacing: 0;
+margin-bottom: 10px;
+}
+
+.NewsTile .NewsTile-readMore {
+font-size: 14px;
+}
+.NewsTile .NewsTile-readMore:after{
+color: #cf0a2c;	
+}
+.NewsTile p {
+line-height: 22px;
+}
+
+.be-text-shadow {
+text-shadow: 1px 1px 15px rgba(0,0,0,1);
+}
+
+
+
+/* BE Typo */
+
+.pagebuilder {
+  color: #2b2b2b;
+  font-family: 'Open Sans', 'Helvetica', arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Montserrat Light'), local('Montserrat-Light'), url(https://fonts.gstatic.com/s/montserrat/v13/JTURjIg1_i6t8kCHKm45_cJD3gnD_g.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 800;
+  src: local('Montserrat ExtraBold'), local('Montserrat-ExtraBold'), url(https://fonts.gstatic.com/s/montserrat/v13/JTURjIg1_i6t8kCHKm45_c5H3gnD_g.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+    font-family: 'bikeexchangealpha';
+    src: url('https://s3.eu-central-1.amazonaws.com/bikeexchange.de/BE_HOMEPAGE/PB-BikeExchange/fonts/bikeexchange_alpha-webfont.woff2') format('woff2'),
+         url('https://s3.eu-central-1.amazonaws.com/bikeexchange.de/BE_HOMEPAGE/PB-BikeExchange/fonts/bikeexchange_alpha-webfont.woff') format('woff'),
+		 url('https://s3.eu-central-1.amazonaws.com/bikeexchange.de/BE_HOMEPAGE/PB-BikeExchange/fonts/bikeexchange_alpha-webfont.ttf')  format('truetype'),
+		 url('https://s3.eu-central-1.amazonaws.com/bikeexchange.de/BE_HOMEPAGE/PB-BikeExchange/fonts/bikeexchange_alpha-webfont.svg#bikeexchangealpha') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body.theme-fontFamilies, p, .theme-fontFamilies h3, .theme-fontFamilies .h3, h4, h5 {
+    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+.pagebuilder p {
+  opacity: 0.8;
+}
+.pagebuilder p.small {
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 0;
+    font-weight: 400;
+}
+.theme-fontFamilies h1, .theme-fontFamilies .h1, .theme-fontFamilies h2, .theme-fontFamilies .h2, h6 {
+	font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+.pagebuilder h1, .theme-fontFamilies h1, .theme-fontFamilies .h1 {
+	font-size: 36px;
+	line-height: 42px;
+	font-weight: 300;
+	letter-spacing: -0.04em;
+}
+.pagebuilder h1 {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+h1.alpha {
+	font-family: 'bikeexchangealpha', 'Montserrat', arial, sans-serif;
+	font-size: 60px;
+	letter-spacing: 0.03em;
+}
+@media (min-width: 992px) {
+.pagebuilder h1, .theme-fontFamilies h1, .theme-fontFamilies .h1 {
+    font-size: 40px;
+    line-height: 1.2;
+  }
+}
+.pagebuilder h2, .theme-fontFamilies h2, .theme-fontFamilies .h2 {
+	font-size: 30px;
+	line-height: 38px;
+	font-weight: 300;
+	letter-spacing: -0.02em;
+}
+.pagebuilder h2 {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+h2.alpha {
+	font-family: 'bikeexchangealpha', 'Montserrat', arial, sans-serif;
+    font-size: 36px;
+    letter-spacing: 0;
+}
+.pagebuilder h3 {
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 500;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+h3.alpha {
+	font-family: 'bikeexchangealpha', 'Montserrat', arial, sans-serif;
+    font-size: 24px;
+    letter-spacing: 0;
+}
+.pagebuilder h4 {
+	font-size: 20px;
+	line-height: 30px;
+	font-weight: 400;
+	opacity: 0.8;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+.pagebuilder h5 {
+	font-size: 16px;
+	line-height: 1.19em;
+	font-weight: 500;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+.pagebuilder h6 {
+	font-size: 18px;
+	line-height: 24px;
+	font-weight: 800;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+.kategorie-tiles h2.alpha {font-size: 44px;}
+
+
+/* Icons */
+
+.icon-telefon{margin-left: 36px;}
+.icon-telefon::before {
+content: url('https://s3.eu-central-1.amazonaws.com/bikeexchange.de/BE-CD/Icons/red-outline/svg+small/BE-icon_telefon_small.svg');
+position: absolute;
+width: 26px;
+margin-left: -36px;
+}
+
+.be-icon-sm {margin-left: 42px;}
+.be-icon-sm::before {
+    position: absolute;
+    width: 32px;
+    margin-left: -42px;
+	top: -8px;	
+}
+.be-icon-sm.be-icon::before {
+    content: url(https://s3.eu-central-1.amazonaws.com/bikeexchange.de/BE-CD/Icons/red-outline/svg/BE-icon_BE-icon.svg);
+}
+.be-icon-sm.be-pin::before {
+    content: url(https://s3.eu-central-1.amazonaws.com/bikeexchange.de/BE-CD/Icons/red-outline/svg/BE-icon_BE-pin.svg);
+}
+.be-icon-sm.anfrage::before {
+    content: url(https://s3.eu-central-1.amazonaws.com/bikeexchange.de/BE-CD/Icons/red-outline/svg/BE-icon_anfrage.svg);
+}
+.be-icon-sm.auge::before {
+    content: url(https://s3.eu-central-1.amazonaws.com/bikeexchange.de/BE-CD/Icons/red-outline/svg/BE-icon_auge.svg);
+}
+.be-icon-sm.auszeichnung::before {
+    content: url(https://s3.eu-central-1.amazonaws.com/bikeexchange.de/BE-CD/Icons/red-outline/svg/BE-icon_auszeichnung.svg);
+}
+.be-icon-sm.blitz::before {
+    content: url(https://s3.eu-central-1.amazonaws.com/bikeexchange.de/BE-CD/Icons/red-outline/svg/BE-icon_blitz.svg);
+}
+.be-icon-sm.click-collect-1::before {
+    content: url(https://s3.eu-central-1.amazonaws.com/bikeexchange.de/BE-CD/Icons/red-outline/svg/BE-icon_click-collect-1.svg);
+}
+.be-icon-sm.click-fahrrad::before {
+    content: url(https://s3.eu-central-1.amazonaws.com/bikeexchange.de/BE-CD/Icons/red-outline/svg/BE-icon_click-fahrrad.svg);
+}
+.be-icon-sm.click::before {
+    content: url(https://s3.eu-central-1.amazonaws.com/bikeexchange.de/BE-CD/Icons/red-outline/svg/BE-icon_click.svg);
+}
+.be-icon-sm.dealer::before {
+    content: url(https://s3.eu-central-1.amazonaws.com/bikeexchange.de/BE-CD/Icons/red-outline/svg/BE-icon_dealer.svg);
+}
+.be-icon-sm.diagram::before {
+    content: url(https://s3.eu-central-1.amazonaws.com/bikeexchange.de/BE-CD/Icons/red-outline/svg/BE-icon_diagram.svg);
+}
+.be-icon-sm.drag-drop::before {
+    content: url(https://s3.eu-central-1.amazonaws.com/bikeexchange.de/BE-CD/Icons/red-outline/svg/BE-icon_drag-drop.svg);
+}
+.be-icon-sm.einfach::before {
+    content: url(https://s3.eu-central-1.amazonaws.com/bikeexchange.de/BE-CD/Icons/red-outline/svg/BE-icon_einfach.svg);
+}
+.be-icon-sm.einkaufswagen::before {
+    content: url(https://s3.eu-central-1.amazonaws.com/bikeexchange.de/BE-CD/Icons/red-outline/svg/BE-icon_einkaufswagen.svg);
+}
+.be-icon-sm.einkaufswagen-2::before {
+    content: url(https://s3.eu-central-1.amazonaws.com/bikeexchange.de/BE-CD/Icons/red-outline/svg/BE-icon_einkaufswagen-2.svg);
+}
+.be-icon-sm.euro-zeichen::before {
+    content: url(https://s3.eu-central-1.amazonaws.com/bikeexchange.de/BE-CD/Icons/red-outline/svg/BE-icon_euro-zeichen.svg);
+}
+.be-icon-sm.fahrrad::before {
+    content: url(https://s3.eu-central-1.amazonaws.com/bikeexchange.de/BE-CD/Icons/red-outline/svg/BE-icon_fahrrad.svg);
+}
+.be-icon-sm.geschenk::before {
+    content: url(https://s3.eu-central-1.amazonaws.com/bikeexchange.de/BE-CD/Icons/red-outline/svg/BE-icon_geschenk.svg);
+}
+.be-icon-sm.haken_small::before {
+    content: url(https://s3.eu-central-1.amazonaws.com/bikeexchange.de/BE-CD/Icons/red-outline/svg/BE-icon_haken_small.svg);
+}
+.be-icon-sm.herz::before {
+    content: url(https://s3.eu-central-1.amazonaws.com/bikeexchange.de/BE-CD/Icons/red-outline/svg/BE-icon_herz.svg);
+}
+.be-icon-sm.herz::before {
+    content: url(https://s3.eu-central-1.amazonaws.com/bikeexchange.de/BE-CD/Icons/red-outline/svg/BE-icon_herz.svg);
+}
+.be-icon-sm.integration::before {
+    content: url(https://s3.eu-central-1.amazonaws.com/bikeexchange.de/BE-CD/Icons/red-outline/svg/BE-icon_integration.svg);
+}
+.be-icon-sm.laptop-bike::before {
+    content: url(https://s3.eu-central-1.amazonaws.com/bikeexchange.de/BE-CD/Icons/red-outline/svg/BE-icon_laptop-bike.svg);
+}
+.be-icon-sm.laptop-leer::before {
+    content: url(https://s3.eu-central-1.amazonaws.com/bikeexchange.de/BE-CD/Icons/red-outline/svg/BE-icon_laptop-leer.svg);
+}
+.be-icon-sm.lkw-1::before {
+    content: url(https://s3.eu-central-1.amazonaws.com/bikeexchange.de/BE-CD/Icons/red-outline/svg/BE-icon_lkw-1.svg);
+}
+.be-icon-sm.lupe::before {
+    content: url(https://s3.eu-central-1.amazonaws.com/bikeexchange.de/BE-CD/Icons/red-outline/svg/BE-icon_lupe.svg);
+}
+.be-icon-sm.netzwerk::before {
+    content: url(https://s3.eu-central-1.amazonaws.com/bikeexchange.de/BE-CD/Icons/red-outline/svg/BE-icon_netzwerk.svg);
+}
+.be-icon-sm.netzwerk-1::before {
+    content: url(https://s3.eu-central-1.amazonaws.com/bikeexchange.de/BE-CD/Icons/red-outline/svg/BE-icon_netzwerk-1.svg);
+}
+.be-icon-sm.netzwerk-2::before {
+    content: url(https://s3.eu-central-1.amazonaws.com/bikeexchange.de/BE-CD/Icons/red-outline/svg/BE-icon_netzwerk-2.svg);
+}
+.be-icon-sm.no1::before {
+    content: url(https://s3.eu-central-1.amazonaws.com/bikeexchange.de/BE-CD/Icons/red-outline/svg/BE-icon_no1.svg);
+}
+.be-icon-sm.no2::before {
+    content: url(https://s3.eu-central-1.amazonaws.com/bikeexchange.de/BE-CD/Icons/red-outline/svg/BE-icon_no2.svg);
+}
+.be-icon-sm.no3::before {
+    content: url(https://s3.eu-central-1.amazonaws.com/bikeexchange.de/BE-CD/Icons/red-outline/svg/BE-icon_no3.svg);
+}
+.be-icon-sm.no4::before {
+    content: url(https://s3.eu-central-1.amazonaws.com/bikeexchange.de/BE-CD/Icons/red-outline/svg/BE-icon_no4.svg);
+}
+.be-icon-sm.no5::before {
+    content: url(https://s3.eu-central-1.amazonaws.com/bikeexchange.de/BE-CD/Icons/red-outline/svg/BE-icon_no5.svg);
+}
+.be-icon-sm.no6::before {
+    content: url(https://s3.eu-central-1.amazonaws.com/bikeexchange.de/BE-CD/Icons/red-outline/svg/BE-icon_no6.svg);
+}
+.be-icon-sm.no7::before {
+    content: url(https://s3.eu-central-1.amazonaws.com/bikeexchange.de/BE-CD/Icons/red-outline/svg/BE-icon_no7.svg);
+}
+.be-icon-sm.no8::before {
+    content: url(https://s3.eu-central-1.amazonaws.com/bikeexchange.de/BE-CD/Icons/red-outline/svg/BE-icon_no8.svg);
+}
+.be-icon-sm.paket::before {
+    content: url(https://s3.eu-central-1.amazonaws.com/bikeexchange.de/BE-CD/Icons/red-outline/svg/BE-icon_paket.svg);
+}
+.be-icon-sm.preisschild::before {
+    content: url(https://s3.eu-central-1.amazonaws.com/bikeexchange.de/BE-CD/Icons/red-outline/svg/BE-icon_preisschild.svg);
+}
+.be-icon-sm.schild-1::before {
+    content: url(https://s3.eu-central-1.amazonaws.com/bikeexchange.de/BE-CD/Icons/red-outline/svg/BE-icon_schild-1.svg);
+}
+.be-icon-sm.schild-2::before {
+    content: url(https://s3.eu-central-1.amazonaws.com/bikeexchange.de/BE-CD/Icons/red-outline/svg/BE-icon_schild-2.svg);
+}
+.be-icon-sm.shopping-local::before {
+    content: url(https://s3.eu-central-1.amazonaws.com/bikeexchange.de/BE-CD/Icons/red-outline/svg/BE-icon_shopping-local.svg);
+}
+.be-icon-sm.shopping-online::before {
+    content: url(https://s3.eu-central-1.amazonaws.com/bikeexchange.de/BE-CD/Icons/red-outline/svg/BE-icon_shopping-online.svg);
+}
+.be-icon-sm.stopuhr::before {
+    content: url(https://s3.eu-central-1.amazonaws.com/bikeexchange.de/BE-CD/Icons/red-outline/svg/BE-icon_stopuhr.svg);
+}
+.be-icon-sm.telefon_small::before {
+    content: url(https://s3.eu-central-1.amazonaws.com/bikeexchange.de/BE-CD/Icons/red-outline/svg/BE-icon_telefon_small.svg);
+}
+.be-icon-sm.weltkugel::before {
+    content: url(https://s3.eu-central-1.amazonaws.com/bikeexchange.de/BE-CD/Icons/red-outline/svg/BE-icon_weltkugel.svg);
+}
+.be-icon-sm.werkzeug::before {
+    content: url(https://s3.eu-central-1.amazonaws.com/bikeexchange.de/BE-CD/Icons/red-outline/svg/BE-icon_werkzeug.svg);
+}
+.be-icon-sm.zauberstab::before {
+    content: url(https://s3.eu-central-1.amazonaws.com/bikeexchange.de/BE-CD/Icons/red-outline/svg/BE-icon_zauberstab.svg);
+}
+.be-icon-sm.zielscheibe::before {
+    content: url(https://s3.eu-central-1.amazonaws.com/bikeexchange.de/BE-CD/Icons/red-outline/svg/BE-icon_zielscheibe.svg);
+}
+
+
+/* Glyphicons */
+
+@font-face {
+  font-family: 'Glyphicons Halflings';
+  src: url(../fonts/glyphicons-halflings-regular.eot);
+  src: url(../fonts/glyphicons-halflings-regular.eot?#iefix) format('embedded-opentype'),url(../fonts/glyphicons-halflings-regular.woff2) format('woff2'),url(../fonts/glyphicons-halflings-regular.woff) format('woff'),url(../fonts/glyphicons-halflings-regular.ttf) format('truetype'),url(../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular) format('svg')
+}
+
+.glyphicon {
+  position: relative;
+  top: 1px;
+  display: inline-block;
+  font-family: 'Glyphicons Halflings';
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale
+}
+
+.glyphicon-asterisk:before {
+  content: "\002a"
+}
+
+.glyphicon-plus:before {
+  content: "\002b"
+}
+
+.glyphicon-eur:before,.glyphicon-euro:before {
+  content: "\20ac"
+}
+
+.glyphicon-minus:before {
+  content: "\2212"
+}
+
+.glyphicon-cloud:before {
+  content: "\2601"
+}
+
+.glyphicon-envelope:before {
+  content: "\2709"
+}
+
+.glyphicon-pencil:before {
+  content: "\270f"
+}
+
+.glyphicon-glass:before {
+  content: "\e001"
+}
+
+.glyphicon-music:before {
+  content: "\e002"
+}
+
+.glyphicon-search:before {
+  content: "\e003"
+}
+
+.glyphicon-heart:before {
+  content: "\e005"
+}
+
+.glyphicon-star:before {
+  content: "\e006"
+}
+
+.glyphicon-star-empty:before {
+  content: "\e007"
+}
+
+.glyphicon-user:before {
+  content: "\e008"
+}
+
+.glyphicon-film:before {
+  content: "\e009"
+}
+
+.glyphicon-th-large:before {
+  content: "\e010"
+}
+
+.glyphicon-th:before {
+  content: "\e011"
+}
+
+.glyphicon-th-list:before {
+  content: "\e012"
+}
+
+.glyphicon-ok:before {
+  content: "\e013"
+}
+
+.glyphicon-remove:before {
+  content: "\e014"
+}
+
+.glyphicon-zoom-in:before {
+  content: "\e015"
+}
+
+.glyphicon-zoom-out:before {
+  content: "\e016"
+}
+
+.glyphicon-off:before {
+  content: "\e017"
+}
+
+.glyphicon-signal:before {
+  content: "\e018"
+}
+
+.glyphicon-cog:before {
+  content: "\e019"
+}
+
+.glyphicon-trash:before {
+  content: "\e020"
+}
+
+.glyphicon-home:before {
+  content: "\e021"
+}
+
+.glyphicon-file:before {
+  content: "\e022"
+}
+
+.glyphicon-time:before {
+  content: "\e023"
+}
+
+.glyphicon-road:before {
+  content: "\e024"
+}
+
+.glyphicon-download-alt:before {
+  content: "\e025"
+}
+
+.glyphicon-download:before {
+  content: "\e026"
+}
+
+.glyphicon-upload:before {
+  content: "\e027"
+}
+
+.glyphicon-inbox:before {
+  content: "\e028"
+}
+
+.glyphicon-play-circle:before {
+  content: "\e029"
+}
+
+.glyphicon-repeat:before {
+  content: "\e030"
+}
+
+.glyphicon-refresh:before {
+  content: "\e031"
+}
+
+.glyphicon-list-alt:before {
+  content: "\e032"
+}
+
+.glyphicon-lock:before {
+  content: "\e033"
+}
+
+.glyphicon-flag:before {
+  content: "\e034"
+}
+
+.glyphicon-headphones:before {
+  content: "\e035"
+}
+
+.glyphicon-volume-off:before {
+  content: "\e036"
+}
+
+.glyphicon-volume-down:before {
+  content: "\e037"
+}
+
+.glyphicon-volume-up:before {
+  content: "\e038"
+}
+
+.glyphicon-qrcode:before {
+  content: "\e039"
+}
+
+.glyphicon-barcode:before {
+  content: "\e040"
+}
+
+.glyphicon-tag:before {
+  content: "\e041"
+}
+
+.glyphicon-tags:before {
+  content: "\e042"
+}
+
+.glyphicon-book:before {
+  content: "\e043"
+}
+
+.glyphicon-bookmark:before {
+  content: "\e044"
+}
+
+.glyphicon-print:before {
+  content: "\e045"
+}
+
+.glyphicon-camera:before {
+  content: "\e046"
+}
+
+.glyphicon-font:before {
+  content: "\e047"
+}
+
+.glyphicon-bold:before {
+  content: "\e048"
+}
+
+.glyphicon-italic:before {
+  content: "\e049"
+}
+
+.glyphicon-text-height:before {
+  content: "\e050"
+}
+
+.glyphicon-text-width:before {
+  content: "\e051"
+}
+
+.glyphicon-align-left:before {
+  content: "\e052"
+}
+
+.glyphicon-align-center:before {
+  content: "\e053"
+}
+
+.glyphicon-align-right:before {
+  content: "\e054"
+}
+
+.glyphicon-align-justify:before {
+  content: "\e055"
+}
+
+.glyphicon-list:before {
+  content: "\e056"
+}
+
+.glyphicon-indent-left:before {
+  content: "\e057"
+}
+
+.glyphicon-indent-right:before {
+  content: "\e058"
+}
+
+.glyphicon-facetime-video:before {
+  content: "\e059"
+}
+
+.glyphicon-picture:before {
+  content: "\e060"
+}
+
+.glyphicon-map-marker:before {
+  content: "\e062"
+}
+
+.glyphicon-adjust:before {
+  content: "\e063"
+}
+
+.glyphicon-tint:before {
+  content: "\e064"
+}
+
+.glyphicon-edit:before {
+  content: "\e065"
+}
+
+.glyphicon-share:before {
+  content: "\e066"
+}
+
+.glyphicon-check:before {
+  content: "\e067"
+}
+
+.glyphicon-move:before {
+  content: "\e068"
+}
+
+.glyphicon-step-backward:before {
+  content: "\e069"
+}
+
+.glyphicon-fast-backward:before {
+  content: "\e070"
+}
+
+.glyphicon-backward:before {
+  content: "\e071"
+}
+
+.glyphicon-play:before {
+  content: "\e072"
+}
+
+.glyphicon-pause:before {
+  content: "\e073"
+}
+
+.glyphicon-stop:before {
+  content: "\e074"
+}
+
+.glyphicon-forward:before {
+  content: "\e075"
+}
+
+.glyphicon-fast-forward:before {
+  content: "\e076"
+}
+
+.glyphicon-step-forward:before {
+  content: "\e077"
+}
+
+.glyphicon-eject:before {
+  content: "\e078"
+}
+
+.glyphicon-chevron-left:before {
+  content: "\e079"
+}
+
+.glyphicon-chevron-right:before {
+  content: "\e080"
+}
+
+.glyphicon-plus-sign:before {
+  content: "\e081"
+}
+
+.glyphicon-minus-sign:before {
+  content: "\e082"
+}
+
+.glyphicon-remove-sign:before {
+  content: "\e083"
+}
+
+.glyphicon-ok-sign:before {
+  content: "\e084"
+}
+
+.glyphicon-question-sign:before {
+  content: "\e085"
+}
+
+.glyphicon-info-sign:before {
+  content: "\e086"
+}
+
+.glyphicon-screenshot:before {
+  content: "\e087"
+}
+
+.glyphicon-remove-circle:before {
+  content: "\e088"
+}
+
+.glyphicon-ok-circle:before {
+  content: "\e089"
+}
+
+.glyphicon-ban-circle:before {
+  content: "\e090"
+}
+
+.glyphicon-arrow-left:before {
+  content: "\e091"
+}
+
+.glyphicon-arrow-right:before {
+  content: "\e092"
+}
+
+.glyphicon-arrow-up:before {
+  content: "\e093"
+}
+
+.glyphicon-arrow-down:before {
+  content: "\e094"
+}
+
+.glyphicon-share-alt:before {
+  content: "\e095"
+}
+
+.glyphicon-resize-full:before {
+  content: "\e096"
+}
+
+.glyphicon-resize-small:before {
+  content: "\e097"
+}
+
+.glyphicon-exclamation-sign:before {
+  content: "\e101"
+}
+
+.glyphicon-gift:before {
+  content: "\e102"
+}
+
+.glyphicon-leaf:before {
+  content: "\e103"
+}
+
+.glyphicon-fire:before {
+  content: "\e104"
+}
+
+.glyphicon-eye-open:before {
+  content: "\e105"
+}
+
+.glyphicon-eye-close:before {
+  content: "\e106"
+}
+
+.glyphicon-warning-sign:before {
+  content: "\e107"
+}
+
+.glyphicon-plane:before {
+  content: "\e108"
+}
+
+.glyphicon-calendar:before {
+  content: "\e109"
+}
+
+.glyphicon-random:before {
+  content: "\e110"
+}
+
+.glyphicon-comment:before {
+  content: "\e111"
+}
+
+.glyphicon-magnet:before {
+  content: "\e112"
+}
+
+.glyphicon-chevron-up:before {
+  content: "\e113"
+}
+
+.glyphicon-chevron-down:before {
+  content: "\e114"
+}
+
+.glyphicon-retweet:before {
+  content: "\e115"
+}
+
+.glyphicon-shopping-cart:before {
+  content: "\e116"
+}
+
+.glyphicon-folder-close:before {
+  content: "\e117"
+}
+
+.glyphicon-folder-open:before {
+  content: "\e118"
+}
+
+.glyphicon-resize-vertical:before {
+  content: "\e119"
+}
+
+.glyphicon-resize-horizontal:before {
+  content: "\e120"
+}
+
+.glyphicon-hdd:before {
+  content: "\e121"
+}
+
+.glyphicon-bullhorn:before {
+  content: "\e122"
+}
+
+.glyphicon-bell:before {
+  content: "\e123"
+}
+
+.glyphicon-certificate:before {
+  content: "\e124"
+}
+
+.glyphicon-thumbs-up:before {
+  content: "\e125"
+}
+
+.glyphicon-thumbs-down:before {
+  content: "\e126"
+}
+
+.glyphicon-hand-right:before {
+  content: "\e127"
+}
+
+.glyphicon-hand-left:before {
+  content: "\e128"
+}
+
+.glyphicon-hand-up:before {
+  content: "\e129"
+}
+
+.glyphicon-hand-down:before {
+  content: "\e130"
+}
+
+.glyphicon-circle-arrow-right:before {
+  content: "\e131"
+}
+
+.glyphicon-circle-arrow-left:before {
+  content: "\e132"
+}
+
+.glyphicon-circle-arrow-up:before {
+  content: "\e133"
+}
+
+.glyphicon-circle-arrow-down:before {
+  content: "\e134"
+}
+
+.glyphicon-globe:before {
+  content: "\e135"
+}
+
+.glyphicon-wrench:before {
+  content: "\e136"
+}
+
+.glyphicon-tasks:before {
+  content: "\e137"
+}
+
+.glyphicon-filter:before {
+  content: "\e138"
+}
+
+.glyphicon-briefcase:before {
+  content: "\e139"
+}
+
+.glyphicon-fullscreen:before {
+  content: "\e140"
+}
+
+.glyphicon-dashboard:before {
+  content: "\e141"
+}
+
+.glyphicon-paperclip:before {
+  content: "\e142"
+}
+
+.glyphicon-heart-empty:before {
+  content: "\e143"
+}
+
+.glyphicon-link:before {
+  content: "\e144"
+}
+
+.glyphicon-phone:before {
+  content: "\e145"
+}
+
+.glyphicon-pushpin:before {
+  content: "\e146"
+}
+
+.glyphicon-usd:before {
+  content: "\e148"
+}
+
+.glyphicon-gbp:before {
+  content: "\e149"
+}
+
+.glyphicon-sort:before {
+  content: "\e150"
+}
+
+.glyphicon-sort-by-alphabet:before {
+  content: "\e151"
+}
+
+.glyphicon-sort-by-alphabet-alt:before {
+  content: "\e152"
+}
+
+.glyphicon-sort-by-order:before {
+  content: "\e153"
+}
+
+.glyphicon-sort-by-order-alt:before {
+  content: "\e154"
+}
+
+.glyphicon-sort-by-attributes:before {
+  content: "\e155"
+}
+
+.glyphicon-sort-by-attributes-alt:before {
+  content: "\e156"
+}
+
+.glyphicon-unchecked:before {
+  content: "\e157"
+}
+
+.glyphicon-expand:before {
+  content: "\e158"
+}
+
+.glyphicon-collapse-down:before {
+  content: "\e159"
+}
+
+.glyphicon-collapse-up:before {
+  content: "\e160"
+}
+
+.glyphicon-log-in:before {
+  content: "\e161"
+}
+
+.glyphicon-flash:before {
+  content: "\e162"
+}
+
+.glyphicon-log-out:before {
+  content: "\e163"
+}
+
+.glyphicon-new-window:before {
+  content: "\e164"
+}
+
+.glyphicon-record:before {
+  content: "\e165"
+}
+
+.glyphicon-save:before {
+  content: "\e166"
+}
+
+.glyphicon-open:before {
+  content: "\e167"
+}
+
+.glyphicon-saved:before {
+  content: "\e168"
+}
+
+.glyphicon-import:before {
+  content: "\e169"
+}
+
+.glyphicon-export:before {
+  content: "\e170"
+}
+
+.glyphicon-send:before {
+  content: "\e171"
+}
+
+.glyphicon-floppy-disk:before {
+  content: "\e172"
+}
+
+.glyphicon-floppy-saved:before {
+  content: "\e173"
+}
+
+.glyphicon-floppy-remove:before {
+  content: "\e174"
+}
+
+.glyphicon-floppy-save:before {
+  content: "\e175"
+}
+
+.glyphicon-floppy-open:before {
+  content: "\e176"
+}
+
+.glyphicon-credit-card:before {
+  content: "\e177"
+}
+
+.glyphicon-transfer:before {
+  content: "\e178"
+}
+
+.glyphicon-cutlery:before {
+  content: "\e179"
+}
+
+.glyphicon-header:before {
+  content: "\e180"
+}
+
+.glyphicon-compressed:before {
+  content: "\e181"
+}
+
+.glyphicon-earphone:before {
+  content: "\e182"
+}
+
+.glyphicon-phone-alt:before {
+  content: "\e183"
+}
+
+.glyphicon-tower:before {
+  content: "\e184"
+}
+
+.glyphicon-stats:before {
+  content: "\e185"
+}
+
+.glyphicon-sd-video:before {
+  content: "\e186"
+}
+
+.glyphicon-hd-video:before {
+  content: "\e187"
+}
+
+.glyphicon-subtitles:before {
+  content: "\e188"
+}
+
+.glyphicon-sound-stereo:before {
+  content: "\e189"
+}
+
+.glyphicon-sound-dolby:before {
+  content: "\e190"
+}
+
+.glyphicon-sound-5-1:before {
+  content: "\e191"
+}
+
+.glyphicon-sound-6-1:before {
+  content: "\e192"
+}
+
+.glyphicon-sound-7-1:before {
+  content: "\e193"
+}
+
+.glyphicon-copyright-mark:before {
+  content: "\e194"
+}
+
+.glyphicon-registration-mark:before {
+  content: "\e195"
+}
+
+.glyphicon-cloud-download:before {
+  content: "\e197"
+}
+
+.glyphicon-cloud-upload:before {
+  content: "\e198"
+}
+
+.glyphicon-tree-conifer:before {
+  content: "\e199"
+}
+
+.glyphicon-tree-deciduous:before {
+  content: "\e200"
+}
+
+.glyphicon-cd:before {
+  content: "\e201"
+}
+
+.glyphicon-save-file:before {
+  content: "\e202"
+}
+
+.glyphicon-open-file:before {
+  content: "\e203"
+}
+
+.glyphicon-level-up:before {
+  content: "\e204"
+}
+
+.glyphicon-copy:before {
+  content: "\e205"
+}
+
+.glyphicon-paste:before {
+  content: "\e206"
+}
+
+.glyphicon-alert:before {
+  content: "\e209"
+}
+
+.glyphicon-equalizer:before {
+  content: "\e210"
+}
+
+.glyphicon-king:before {
+  content: "\e211"
+}
+
+.glyphicon-queen:before {
+  content: "\e212"
+}
+
+.glyphicon-pawn:before {
+  content: "\e213"
+}
+
+.glyphicon-bishop:before {
+  content: "\e214"
+}
+
+.glyphicon-knight:before {
+  content: "\e215"
+}
+
+.glyphicon-baby-formula:before {
+  content: "\e216"
+}
+
+.glyphicon-tent:before {
+  content: "\26fa"
+}
+
+.glyphicon-blackboard:before {
+  content: "\e218"
+}
+
+.glyphicon-bed:before {
+  content: "\e219"
+}
+
+.glyphicon-apple:before {
+  content: "\f8ff"
+}
+
+.glyphicon-erase:before {
+  content: "\e221"
+}
+
+.glyphicon-hourglass:before {
+  content: "\231b"
+}
+
+.glyphicon-lamp:before {
+  content: "\e223"
+}
+
+.glyphicon-duplicate:before {
+  content: "\e224"
+}
+
+.glyphicon-piggy-bank:before {
+  content: "\e225"
+}
+
+.glyphicon-scissors:before {
+  content: "\e226"
+}
+
+.glyphicon-bitcoin:before {
+  content: "\e227"
+}
+
+.glyphicon-btc:before {
+  content: "\e227"
+}
+
+.glyphicon-xbt:before {
+  content: "\e227"
+}
+
+.glyphicon-yen:before {
+  content: "\00a5"
+}
+
+.glyphicon-jpy:before {
+  content: "\00a5"
+}
+
+.glyphicon-ruble:before {
+  content: "\20bd"
+}
+
+.glyphicon-rub:before {
+  content: "\20bd"
+}
+
+.glyphicon-scale:before {
+  content: "\e230"
+}
+
+.glyphicon-ice-lolly:before {
+  content: "\e231"
+}
+
+.glyphicon-ice-lolly-tasted:before {
+  content: "\e232"
+}
+
+.glyphicon-education:before {
+  content: "\e233"
+}
+
+.glyphicon-option-horizontal:before {
+  content: "\e234"
+}
+
+.glyphicon-option-vertical:before {
+  content: "\e235"
+}
+
+.glyphicon-menu-hamburger:before {
+  content: "\e236"
+}
+
+.glyphicon-modal-window:before {
+  content: "\e237"
+}
+
+.glyphicon-oil:before {
+  content: "\e238"
+}
+
+.glyphicon-grain:before {
+  content: "\e239"
+}
+
+.glyphicon-sunglasses:before {
+  content: "\e240"
+}
+
+.glyphicon-text-size:before {
+  content: "\e241"
+}
+
+.glyphicon-text-color:before {
+  content: "\e242"
+}
+
+.glyphicon-text-background:before {
+  content: "\e243"
+}
+
+.glyphicon-object-align-top:before {
+  content: "\e244"
+}
+
+.glyphicon-object-align-bottom:before {
+  content: "\e245"
+}
+
+.glyphicon-object-align-horizontal:before {
+  content: "\e246"
+}
+
+.glyphicon-object-align-left:before {
+  content: "\e247"
+}
+
+.glyphicon-object-align-vertical:before {
+  content: "\e248"
+}
+
+.glyphicon-object-align-right:before {
+  content: "\e249"
+}
+
+.glyphicon-triangle-right:before {
+  content: "\e250"
+}
+
+.glyphicon-triangle-left:before {
+  content: "\e251"
+}
+
+.glyphicon-triangle-bottom:before {
+  content: "\e252"
+}
+
+.glyphicon-triangle-top:before {
+  content: "\e253"
+}
+
+.glyphicon-console:before {
+  content: "\e254"
+}
+
+.glyphicon-superscript:before {
+  content: "\e255"
+}
+
+.glyphicon-subscript:before {
+  content: "\e256"
+}
+
+.glyphicon-menu-left:before {
+  content: "\e257"
+}
+
+.glyphicon-menu-right:before {
+  content: "\e258"
+}
+
+.glyphicon-menu-down:before {
+  content: "\e259"
+}
+
+.glyphicon-menu-up:before {
+  content: "\e260"
+}

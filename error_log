@@ -1,0 +1,6 @@
+[19-Aug-2021 06:13:41 UTC] PHP Fatal error:  Cannot use empty array elements in arrays in /home3/rajranim/skjpr.com/marketplace/application/modules/myaccount/controllers/Myaccount.php on line 164
+[19-Aug-2021 06:14:31 UTC] PHP Fatal error:  Cannot use empty array elements in arrays in /home3/rajranim/skjpr.com/marketplace/application/modules/myaccount/controllers/Myaccount.php on line 164
+[19-Aug-2021 06:21:54 UTC] PHP Fatal error:  Cannot use empty array elements in arrays in /home3/rajranim/skjpr.com/marketplace/application/modules/myaccount/controllers/Myaccount.php on line 164
+[19-Aug-2021 06:36:30 UTC] PHP Fatal error:  Cannot use empty array elements in arrays in /home3/rajranim/skjpr.com/marketplace/application/modules/myaccount/controllers/Myaccount.php on line 164
+[19-Aug-2021 06:39:47 UTC] PHP Fatal error:  Cannot use empty array elements in arrays in /home3/rajranim/skjpr.com/marketplace/application/modules/myaccount/controllers/Myaccount.php on line 164
+[25-Sep-2021 06:56:20 UTC] PHP Warning:  Unterminated comment starting line 2624 in /home3/jayshddv/public_html/marketplace/application/helpers/basic_helper.php on line 2624
